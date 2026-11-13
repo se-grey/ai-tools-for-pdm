@@ -1,0 +1,4 @@
+node_modules/
+boris.db
+boris.db-shm
+boris.db-wal

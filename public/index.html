@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Запись сотрудников Догяндекса на прогулку с Борисом">
+  <title>Кто выгуливает Бориса</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Догяндекс — на главную">
+      <span class="brand__mark" aria-hidden="true">Д</span>
+      <span>Догяндекс</span>
+    </a>
+    <span class="header-label">Офис Бориса</span>
+  </header>
+
+  <main class="page">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Прогулки на сегодня</p>
+        <h1 id="page-title">Кто выгуливает Бориса?</h1>
+        <p class="hero__text">Выберите свободное время и запишитесь — без звонков и лишних согласований.</p>
+      </div>
+      <time class="date-card" id="current-date"></time>
+    </section>
+
+    <div class="content-grid">
+      <section class="panel walks-panel" aria-labelledby="walks-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Расписание</p>
+            <h2 id="walks-title">Пять прогулок</h2>
+          </div>
+          <span class="count-label">5 слотов</span>
+        </div>
+        <p class="notice" id="booking-message" role="status" hidden></p>
+        <div class="slots" id="slots">
+          <p class="loading">Загружаем расписание…</p>
+        </div>
+      </section>
+
+      <aside class="panel feeding-panel" aria-labelledby="feeding-title">
+        <p class="eyebrow">Забота о Борисе</p>
+        <h2 id="feeding-title">Последнее кормление</h2>
+        <div class="feeding-state" id="feeding-state">
+          <p class="loading">Загружаем отметку…</p>
+        </div>
+        <form class="feeding-form" id="feeding-form">
+          <label for="feeding-name">Кто покормил Бориса?</label>
+          <input id="feeding-name" name="employeeName" type="text" placeholder="Илья Примеров" autocomplete="off" required>
+          <button type="submit">Отметить кормление</button>
+        </form>
+        <p class="notice" id="feeding-message" role="status" hidden></p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">Учебный проект · все имена и данные синтетические</footer>
+  <script src="/app.js"></script>
+</body>
+</html>
