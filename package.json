@@ -1,0 +1,12 @@
+{
+  "name": "kto-vygulivaet-borisa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Учебный micro-MVP записи на прогулку с Борисом",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
